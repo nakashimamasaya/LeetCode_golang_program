@@ -6,6 +6,7 @@ import (
 	"LeetCode/problem/00026"
 	_0027 "LeetCode/problem/00027"
 	_0028 "LeetCode/problem/00028"
+	_0035 "LeetCode/problem/00035"
 	"LeetCode/problem/00704"
 	"fmt"
 )
@@ -30,6 +31,10 @@ func main() {
 	// 28. Implement strStr()
 	separate("28")
 	fmt.Println(_0028.StrStr("hello", "ll"))
+
+	// 35. Search Insert Position
+	separate("35")
+	fmt.Println(_0035.SearchInsert([]int{1, 3, 5, 6}, 5))
 
 	// 704. Binary Search
 	separate("704")
