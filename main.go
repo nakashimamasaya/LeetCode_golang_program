@@ -8,6 +8,7 @@ import (
 	_0028 "LeetCode/problem/00028"
 	_0035 "LeetCode/problem/00035"
 	_0058 "LeetCode/problem/00058"
+	_0066 "LeetCode/problem/00066"
 	"LeetCode/problem/00704"
 	"fmt"
 )
@@ -40,6 +41,10 @@ func main() {
 	// 58. Length of Last Word
 	separate("58")
 	fmt.Println(_0058.LengthOfLastWord("   fly me   to   the moon  "))
+
+	// 66. Plus One
+	separate("66")
+	fmt.Println(_0066.PlusOne([]int{9, 9, 9}))
 
 	// 704. Binary Search
 	separate("704")
