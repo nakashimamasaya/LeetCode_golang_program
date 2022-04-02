@@ -1,4 +1,4 @@
-if [ $# -ne  1 ]; then
+if [ $# -ne  3 ]; then
   echo "引数の数がおかしいぞ！！！！！"
   exit
 fi
@@ -6,3 +6,5 @@ fi
 mkdir problem/$1
 touch problem/$1/$1.go
 echo "package _$1" > problem/$1/$1.go
+echo "\n// $2" >> problem/$1/$1.go
+echo "// $3" >> problem/$1/$1.go
