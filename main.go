@@ -9,6 +9,7 @@ import (
 	_0035 "LeetCode/problem/00035"
 	_0058 "LeetCode/problem/00058"
 	_0066 "LeetCode/problem/00066"
+	_0067 "LeetCode/problem/00067"
 	"LeetCode/problem/00704"
 	"fmt"
 )
@@ -45,6 +46,10 @@ func main() {
 	// 66. Plus One
 	separate("66")
 	fmt.Println(_0066.PlusOne([]int{9, 9, 9}))
+
+	// 67. Add Binary
+	separate("67")
+	fmt.Println(_0067.AddBinary("11", "1"))
 
 	// 704. Binary Search
 	separate("704")
