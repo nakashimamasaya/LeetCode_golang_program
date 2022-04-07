@@ -11,6 +11,7 @@ import (
 	_0066 "LeetCode/problem/00066"
 	_0067 "LeetCode/problem/00067"
 	"LeetCode/problem/00704"
+	_01046 "LeetCode/problem/01046"
 	"fmt"
 )
 
@@ -54,6 +55,10 @@ func main() {
 	// 704. Binary Search
 	separate("704")
 	fmt.Println(_0704.Search([]int{-1, 0, 3, 5, 9, 12}, 9))
+
+	// 1046. Last Stone Weight
+	separate("1046")
+	fmt.Println(_01046.LastStoneWeight([]int{2, 7, 4, 1, 8, 1}))
 }
 
 func separate(num string) {
