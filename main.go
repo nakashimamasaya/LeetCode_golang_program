@@ -10,6 +10,7 @@ import (
 	_0058 "LeetCode/problem/00058"
 	_0066 "LeetCode/problem/00066"
 	_0067 "LeetCode/problem/00067"
+	_0136 "LeetCode/problem/00136"
 	_0171 "LeetCode/problem/00171"
 	"LeetCode/problem/00704"
 	_01046 "LeetCode/problem/01046"
@@ -53,6 +54,9 @@ func main() {
 	separate("67")
 	fmt.Println(_0067.AddBinary("11", "1"))
 
+	// 136. Single Number
+	separate("136")
+	fmt.Println(_0136.SingleNumber([]int{4, 1, 2, 1, 2}))
 	// 171. Excel Sheet Column Number
 	separate("171")
 	fmt.Println(_0171.TitleToNumber("AB"))
