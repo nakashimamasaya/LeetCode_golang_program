@@ -10,6 +10,7 @@ import (
 	_0058 "LeetCode/problem/00058"
 	_0066 "LeetCode/problem/00066"
 	_0067 "LeetCode/problem/00067"
+	_0070 "LeetCode/problem/00070"
 	_0136 "LeetCode/problem/00136"
 	_0171 "LeetCode/problem/00171"
 	"LeetCode/problem/00704"
@@ -53,6 +54,10 @@ func main() {
 	// 67. Add Binary
 	separate("67")
 	fmt.Println(_0067.AddBinary("11", "1"))
+
+	// 70. Climbing Stairs
+	separate("70")
+	fmt.Println(_0070.ClimbStairs(4))
 
 	// 136. Single Number
 	separate("136")
