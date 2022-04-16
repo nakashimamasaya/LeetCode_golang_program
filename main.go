@@ -15,6 +15,7 @@ import (
 	_0070 "LeetCode/problem/00070"
 	_0136 "LeetCode/problem/00136"
 	_0171 "LeetCode/problem/00171"
+	_0206 "LeetCode/problem/00206"
 	_0217 "LeetCode/problem/00217"
 	_0219 "LeetCode/problem/00219"
 	"LeetCode/problem/00704"
@@ -78,6 +79,10 @@ func main() {
 	// 171. Excel Sheet Column Number
 	separate("171")
 	fmt.Println(_0171.TitleToNumber("AB"))
+
+	// 206. Reverse Linked List
+	separate("206")
+	fmt.Println(_0206.ReverseList(_0206.SetSample()).Val)
 
 	// 217. Contains Duplicate
 	separate("217")
