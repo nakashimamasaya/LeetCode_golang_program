@@ -7,6 +7,7 @@ import (
 	_0027 "LeetCode/problem/00027"
 	_0028 "LeetCode/problem/00028"
 	_0035 "LeetCode/problem/00035"
+	_0053 "LeetCode/problem/00053"
 	_0058 "LeetCode/problem/00058"
 	_0066 "LeetCode/problem/00066"
 	_0067 "LeetCode/problem/00067"
@@ -42,6 +43,10 @@ func main() {
 	// 35. Search Insert Position
 	separate("35")
 	fmt.Println(_0035.SearchInsert([]int{1, 3, 5, 6}, 5))
+
+	// 53. Maximum Subarray
+	separate("53")
+	fmt.Println(_0053.MaxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
 
 	// 58. Length of Last Word
 	separate("58")
