@@ -16,6 +16,7 @@ import (
 	_0136 "LeetCode/problem/00136"
 	_0171 "LeetCode/problem/00171"
 	_0217 "LeetCode/problem/00217"
+	_0219 "LeetCode/problem/00219"
 	"LeetCode/problem/00704"
 	_01046 "LeetCode/problem/01046"
 	"fmt"
@@ -81,6 +82,10 @@ func main() {
 	// 217. Contains Duplicate
 	separate("217")
 	fmt.Println(_0217.ContainsDuplicate([]int{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}))
+
+	// 219. Contains Duplicate II
+	separate("219")
+	fmt.Println(_0219.ContainsNearbyDuplicate([]int{1, 2, 3, 1, 2, 3}, 2))
 
 	// 704. Binary Search
 	separate("704")
