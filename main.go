@@ -2,6 +2,7 @@ package main
 
 import (
 	"LeetCode/problem/00020"
+	_0021 "LeetCode/problem/00021"
 	_0022 "LeetCode/problem/00022"
 	"LeetCode/problem/00026"
 	_0027 "LeetCode/problem/00027"
@@ -28,6 +29,10 @@ func main() {
 	// 20. Valid Parentheses
 	separate("20")
 	fmt.Println(_0020.IsValid("([)]"))
+
+	// 21. Merge Two Sorted Lists
+	separate("21")
+	fmt.Println(_0021.MergeTwoLists(_0021.SetSample(), _0021.SetSample()))
 
 	// 22. Generate Parentheses
 	separate("22")
