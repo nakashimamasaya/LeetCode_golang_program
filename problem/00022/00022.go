@@ -4,7 +4,7 @@ package _0022
 // https://leetcode.com/problems/generate-parentheses/
 
 func GenerateParenthesis(n int) []string {
-	return memoGenerateParenthesis(n, map[int][]string{0: []string{}, 1: []string{"()"}})
+	return memoGenerateParenthesis(n, map[int][]string{0: {}, 1: {"()"}})
 }
 
 func memoGenerateParenthesis(n int, memo map[int][]string) []string {
