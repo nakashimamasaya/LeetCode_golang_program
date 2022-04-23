@@ -1,7 +1,6 @@
 package main
 
 import (
-	_0022 "LeetCode/problem/00022"
 	_0026 "LeetCode/problem/00026"
 	_0027 "LeetCode/problem/00027"
 	_0028 "LeetCode/problem/00028"
@@ -24,10 +23,6 @@ import (
 )
 
 func main() {
-	// 22. Generate Parentheses
-	separate("22")
-	fmt.Println(_0022.GenerateParenthesis(4))
-
 	// 26. Remove Duplicates from Sorted Array
 	separate("26")
 	fmt.Println(_0026.RemoveDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
