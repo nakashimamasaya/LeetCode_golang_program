@@ -1,7 +1,6 @@
 package main
 
 import (
-	_0026 "LeetCode/problem/00026"
 	_0027 "LeetCode/problem/00027"
 	_0028 "LeetCode/problem/00028"
 	_0035 "LeetCode/problem/00035"
@@ -23,10 +22,6 @@ import (
 )
 
 func main() {
-	// 26. Remove Duplicates from Sorted Array
-	separate("26")
-	fmt.Println(_0026.RemoveDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
-
 	// 27. Remove Element
 	separate("27")
 	fmt.Println(_0027.RemoveElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2))
