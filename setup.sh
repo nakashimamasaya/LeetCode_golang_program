@@ -8,3 +8,6 @@ touch problem/$1/$1.go
 echo "package _$1" > problem/$1/$1.go
 echo "\n// $2" >> problem/$1/$1.go
 echo "// $3" >> problem/$1/$1.go
+
+touch problem/$1/$1_test.go
+echo "package _$1" > problem/$1/$1.go
