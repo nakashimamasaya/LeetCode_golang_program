@@ -1,10 +1,9 @@
 package main
 
 import (
-	"LeetCode/problem/00020"
 	_0021 "LeetCode/problem/00021"
 	_0022 "LeetCode/problem/00022"
-	"LeetCode/problem/00026"
+	_0026 "LeetCode/problem/00026"
 	_0027 "LeetCode/problem/00027"
 	_0028 "LeetCode/problem/00028"
 	_0035 "LeetCode/problem/00035"
@@ -20,16 +19,12 @@ import (
 	_0206 "LeetCode/problem/00206"
 	_0217 "LeetCode/problem/00217"
 	_0219 "LeetCode/problem/00219"
-	"LeetCode/problem/00704"
+	_0704 "LeetCode/problem/00704"
 	_01046 "LeetCode/problem/01046"
 	"fmt"
 )
 
 func main() {
-	// 20. Valid Parentheses
-	separate("20")
-	fmt.Println(_0020.IsValid("([)]"))
-
 	// 21. Merge Two Sorted Lists
 	separate("21")
 	fmt.Println(_0021.MergeTwoLists(_0021.SetSample(), _0021.SetSample()))
