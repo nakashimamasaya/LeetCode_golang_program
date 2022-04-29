@@ -1,7 +1,6 @@
 package main
 
 import (
-	_0027 "LeetCode/problem/00027"
 	_0028 "LeetCode/problem/00028"
 	_0035 "LeetCode/problem/00035"
 	_0053 "LeetCode/problem/00053"
@@ -22,10 +21,6 @@ import (
 )
 
 func main() {
-	// 27. Remove Element
-	separate("27")
-	fmt.Println(_0027.RemoveElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2))
-
 	// 28. Implement strStr()
 	separate("28")
 	fmt.Println(_0028.StrStr("hello", "ll"))
