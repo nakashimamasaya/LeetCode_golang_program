@@ -5,6 +5,7 @@ https://leetcode.com/kamo18sima/
 
 # Memo
 ./setup Usage
+Generates a file with the code to be written and the test code
 ```
 ./setup.sh {problem number} {problem title} {problem url}
 
