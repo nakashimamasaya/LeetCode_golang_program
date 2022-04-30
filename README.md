@@ -1,4 +1,4 @@
-![Test](https://github.com/nakashimamasaya/LeetCode_golang_program
+[![Test](https://github.com/nakashimamasaya/LeetCode_golang_program
 /actions/workflows/test.yml/badge.svg)](https://github.com/nakashimamasaya/LeetCode_golang_program
 /actions/workflows/test.yml)
 # What
