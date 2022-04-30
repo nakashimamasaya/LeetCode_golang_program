@@ -1,6 +1,4 @@
-[![Test](https://github.com/nakashimamasaya/LeetCode_golang_program
-/actions/workflows/test.yml/badge.svg)](https://github.com/nakashimamasaya/LeetCode_golang_program
-/actions/workflows/test.yml)
+[![Test](https://github.com/nakashimamasaya/LeetCode_golang_program/actions/workflows/test.yml/badge.svg)](https://github.com/nakashimamasaya/LeetCode_golang_program/actions/workflows/test.yml)
 # What
 Record of LeetCode problems solved
 
