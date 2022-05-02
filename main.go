@@ -1,7 +1,6 @@
 package main
 
 import (
-	_0035 "LeetCode/problem/00035"
 	_0053 "LeetCode/problem/00053"
 	_0058 "LeetCode/problem/00058"
 	_0066 "LeetCode/problem/00066"
@@ -20,10 +19,6 @@ import (
 )
 
 func main() {
-	// 35. Search Insert Position
-	separate("35")
-	fmt.Println(_0035.SearchInsert([]int{1, 3, 5, 6}, 5))
-
 	// 53. Maximum Subarray
 	separate("53")
 	fmt.Println(_0053.MaxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
