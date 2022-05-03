@@ -1,7 +1,6 @@
 package main
 
 import (
-	_0058 "LeetCode/problem/00058"
 	_0066 "LeetCode/problem/00066"
 	_0067 "LeetCode/problem/00067"
 	_0069 "LeetCode/problem/00069"
@@ -18,10 +17,6 @@ import (
 )
 
 func main() {
-	// 58. Length of Last Word
-	separate("58")
-	fmt.Println(_0058.LengthOfLastWord("   fly me   to   the moon  "))
-
 	// 66. Plus One
 	separate("66")
 	fmt.Println(_0066.PlusOne([]int{9, 9, 9}))
