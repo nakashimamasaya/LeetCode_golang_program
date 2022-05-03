@@ -1,7 +1,6 @@
 package main
 
 import (
-	_0053 "LeetCode/problem/00053"
 	_0058 "LeetCode/problem/00058"
 	_0066 "LeetCode/problem/00066"
 	_0067 "LeetCode/problem/00067"
@@ -19,10 +18,6 @@ import (
 )
 
 func main() {
-	// 53. Maximum Subarray
-	separate("53")
-	fmt.Println(_0053.MaxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
-
 	// 58. Length of Last Word
 	separate("58")
 	fmt.Println(_0058.LengthOfLastWord("   fly me   to   the moon  "))
