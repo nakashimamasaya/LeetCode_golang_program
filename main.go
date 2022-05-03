@@ -1,7 +1,6 @@
 package main
 
 import (
-	_0066 "LeetCode/problem/00066"
 	_0067 "LeetCode/problem/00067"
 	_0069 "LeetCode/problem/00069"
 	_0070 "LeetCode/problem/00070"
@@ -17,10 +16,6 @@ import (
 )
 
 func main() {
-	// 66. Plus One
-	separate("66")
-	fmt.Println(_0066.PlusOne([]int{9, 9, 9}))
-
 	// 67. Add Binary
 	separate("67")
 	fmt.Println(_0067.AddBinary("11", "1"))
