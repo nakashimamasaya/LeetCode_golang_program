@@ -1,7 +1,6 @@
 package main
 
 import (
-	_0070 "LeetCode/problem/00070"
 	_0083 "LeetCode/problem/00083"
 	_0136 "LeetCode/problem/00136"
 	_0171 "LeetCode/problem/00171"
@@ -14,10 +13,6 @@ import (
 )
 
 func main() {
-	// 70. Climbing Stairs
-	separate("70")
-	fmt.Println(_0070.ClimbStairs(4))
-
 	// 83. Remove Duplicates from Sorted List
 	separate("83")
 	fmt.Println(_0083.DeleteDuplicates(_0083.SetSample()))
