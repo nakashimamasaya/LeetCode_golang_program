@@ -4,7 +4,6 @@ import (
 	_0083 "LeetCode/problem/00083"
 	_0171 "LeetCode/problem/00171"
 	_0206 "LeetCode/problem/00206"
-	_0217 "LeetCode/problem/00217"
 	_0704 "LeetCode/problem/00704"
 	_01046 "LeetCode/problem/01046"
 	"fmt"
@@ -22,10 +21,6 @@ func main() {
 	// 206. Reverse Linked List
 	separate("206")
 	fmt.Println(_0206.ReverseList(_0206.SetSample()).Val)
-
-	// 217. Contains Duplicate
-	separate("217")
-	fmt.Println(_0217.ContainsDuplicate([]int{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}))
 
 	// 704. Binary Search
 	separate("704")
