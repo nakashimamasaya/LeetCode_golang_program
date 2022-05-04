@@ -1,7 +1,6 @@
 package main
 
 import (
-	_0067 "LeetCode/problem/00067"
 	_0069 "LeetCode/problem/00069"
 	_0070 "LeetCode/problem/00070"
 	_0083 "LeetCode/problem/00083"
@@ -16,10 +15,6 @@ import (
 )
 
 func main() {
-	// 67. Add Binary
-	separate("67")
-	fmt.Println(_0067.AddBinary("11", "1"))
-
 	// 69. Sqrt(x)
 	separate("69")
 	fmt.Println(_0069.MySqrt(0))
