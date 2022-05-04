@@ -1,7 +1,6 @@
 package main
 
 import (
-	_0069 "LeetCode/problem/00069"
 	_0070 "LeetCode/problem/00070"
 	_0083 "LeetCode/problem/00083"
 	_0136 "LeetCode/problem/00136"
@@ -15,10 +14,6 @@ import (
 )
 
 func main() {
-	// 69. Sqrt(x)
-	separate("69")
-	fmt.Println(_0069.MySqrt(0))
-
 	// 70. Climbing Stairs
 	separate("70")
 	fmt.Println(_0070.ClimbStairs(4))
