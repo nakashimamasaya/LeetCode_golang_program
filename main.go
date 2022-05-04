@@ -2,7 +2,6 @@ package main
 
 import (
 	_0083 "LeetCode/problem/00083"
-	_0171 "LeetCode/problem/00171"
 	_0206 "LeetCode/problem/00206"
 	_0704 "LeetCode/problem/00704"
 	"fmt"
@@ -12,10 +11,6 @@ func main() {
 	// 83. Remove Duplicates from Sorted List
 	separate("83")
 	fmt.Println(_0083.DeleteDuplicates(_0083.SetSample()))
-
-	// 171. Excel Sheet Column Number
-	separate("171")
-	fmt.Println(_0171.TitleToNumber("AB"))
 
 	// 206. Reverse Linked List
 	separate("206")
