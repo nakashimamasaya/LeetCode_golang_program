@@ -8,13 +8,7 @@ func TestSample1(t *testing.T) {
 	ans := 2
 	result := RemoveElement(nums, val)
 	if result != ans {
-		t.Error("sample1 miss result")
-	}
-
-	for i := 0; i < ans; i++ {
-		if nums[i] == val {
-			t.Error("sample1 miss nums")
-		}
+		t.Error("sample1 miss")
 	}
 }
 
@@ -24,13 +18,6 @@ func TestSample2(t *testing.T) {
 	ans := 5
 	result := RemoveElement(nums, val)
 	if result != ans {
-		t.Error("sample2 miss val")
+		t.Error("sample2 miss")
 	}
-
-	for i := 0; i < ans; i++ {
-		if nums[i] == val {
-			t.Error("sample2 miss nums")
-		}
-	}
-
 }
