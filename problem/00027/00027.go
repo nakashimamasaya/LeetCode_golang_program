@@ -16,6 +16,5 @@ func RemoveElement(nums []int, val int) int {
 	}
 
 	sort.Ints(nums)
-	nums = nums[:count]
 	return count
 }
