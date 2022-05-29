@@ -13,3 +13,20 @@ Generates a file with the code to be written and the test code
 ex
 $ ./setup.sh 00053 "53. Maximum Subarray" https://leetcode.com/problems/maximum-subarray/   
 ```
+
+migrate
+```
+migrate file generate
+$ sql-migrate new $file
+
+migrate up
+$ sql-migrate up
+
+migrate down
+$ sql-migrate down
+```
+
+seed
+```
+$ go run db/seeds/seed.go
+```
