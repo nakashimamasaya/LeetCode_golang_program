@@ -1,10 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"log"
 
-	_00183 "LeetCode/db/seeds/problem/00183"
 	models "LeetCode/models"
 
 	"github.com/jinzhu/gorm"
@@ -19,18 +17,9 @@ func openConnection() *gorm.DB {
 	return db
 }
 
-func Seed(db *gorm.DB) error {
-	message := _00183.Seed(db)
-	return message
-}
-
 func main() {
 	db := openConnection()
 	defer db.Close()
 
 	db.AutoMigrate(models.Customers{}, models.Orders{})
-	if err := Seed(db); err != nil {
-		fmt.Printf("%+v", err)
-		return
-	}
 }
