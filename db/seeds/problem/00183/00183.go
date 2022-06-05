@@ -2,8 +2,9 @@ package _00183
 
 import (
 	"github.com/jinzhu/gorm"
-)
 
+	models "LeetCode/models"
+)
 
 func Seed(db *gorm.DB) error {
 	names := []string{
@@ -19,14 +20,14 @@ func Seed(db *gorm.DB) error {
 	}
 
 	for _, name := range names {
-		n := Customers{Name: name}
+		n := models.Customers{Name: name}
 		if err := db.Create(&n).Error; err != nil {
 			return err
 		}
 	}
 
 	for _, cId := range customerIds {
-		o := Orders{CustomerId: cId}
+		o := models.Orders{CustomerId: cId}
 		if err := db.Create(&o).Error; err != nil {
 			return err
 		}

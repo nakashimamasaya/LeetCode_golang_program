@@ -21,5 +21,8 @@ func main() {
 	db := openConnection()
 	defer db.Close()
 
-	db.AutoMigrate(models.Customers{}, models.Orders{})
+	db.AutoMigrate(
+		&models.Customers{},
+		&models.Orders{},
+	)
 }
