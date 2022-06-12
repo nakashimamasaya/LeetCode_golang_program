@@ -14,19 +14,7 @@ ex
 $ ./setup.sh 00053 "53. Maximum Subarray" https://leetcode.com/problems/maximum-subarray/   
 ```
 
-migrate
+migrate & seed
 ```
-migrate file generate
-$ sql-migrate new $file
-
-migrate up
-$ sql-migrate up
-
-migrate down
-$ sql-migrate down
-```
-
-seed
-```
-$ go run db/seeds/seed.go
+$ ./create_db.sh
 ```
