@@ -12,7 +12,7 @@ import (
 )
 
 func openConnection() *gorm.DB {
-	db, err := gorm.Open("mysql", "root:password@tcp(127.0.0.1:3306)/TEST?charset=utf8mb4&parseTime=True&loc=Local")
+	db, err := gorm.Open("mysql", "root:password@tcp(mysql:3306)/TEST?charset=utf8mb4&parseTime=True&loc=Local&timeout=1m")
 	if err != nil {
 		log.Fatalf("Couldn't establish database connection: %s", err)
 	}
