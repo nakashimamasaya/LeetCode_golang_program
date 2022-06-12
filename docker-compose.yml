@@ -13,3 +13,11 @@ services:
       - ./db/initdb.d:/docker-entrypoint-initdb.d
     ports:
       - "3306:3306"
+
+  golang_seed:
+    build: ./db/
+    tty: true 
+    volumes:
+      - ./:/go/src/app
+    depends_on:
+      - mysql
