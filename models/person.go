@@ -1,7 +1,7 @@
 package models
 
 type Person struct {
-	Id    int `gorm:"primaryKey"`
+	ID    int `gorm:"primaryKey"`
 	Email string
 }
 

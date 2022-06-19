@@ -1,7 +1,6 @@
 package models
 
 type Orders struct {
-	Id         int       `gorm:"primaryKey"`
-	CustomerId int       `gorm:"column:customerID"`
-	Customers  Customers `gorm:"foreignKey:customerId"`
+	ID         int `gorm:"primaryKey"`
+	CustomerID int `gorm:"column:customerId"`
 }
