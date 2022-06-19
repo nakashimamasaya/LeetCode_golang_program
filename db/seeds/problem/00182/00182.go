@@ -1,23 +1,17 @@
 package _00182
 
 import (
-	"github.com/jinzhu/gorm"
-
 	models "LeetCode/models"
+
+	"gorm.io/gorm"
+	"gorm.io/gorm/clause"
 )
 
 func Seed(db *gorm.DB) error {
-	emails := []string{
-		"a@b.com",
-		"c@b.com",
-		"a@b.com",
+	persons := []models.Person{
+		{ID: 1, Email: "a@b.com"},
+		{ID: 2, Email: "c@b.com"},
+		{ID: 3, Email: "a@b.com"},
 	}
-
-	for i, email := range emails {
-		e := models.Person{Id: i + 1, Email: email}
-		if err := db.Create(&e).Error; err != nil {
-			return err
-		}
-	}
-	return nil
+	return db.Clauses(clause.OnConflict{DoNothing: true}).Create(&persons).Error
 }
