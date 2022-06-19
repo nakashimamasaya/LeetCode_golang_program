@@ -36,12 +36,15 @@ func Seed(db *gorm.DB) error {
 func main() {
 	db := openConnection()
 
-	db.AutoMigrate(
+	if err := db.AutoMigrate(
 		models.Customers{},
 		models.Employee{},
 		models.Orders{},
 		models.Person{},
-	)
+	); err != nil {
+		fmt.Printf("%+v", err)
+		return
+	}
 
 	if err := Seed(db); err != nil {
 		fmt.Printf("%+v", err)
