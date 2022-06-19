@@ -13,8 +13,8 @@ func Seed(db *gorm.DB) error {
 		"a@b.com",
 	}
 
-	for _, email := range emails {
-		e := models.Persons{Email: email}
+	for i, email := range emails {
+		e := models.Person{Id: i + 1, Email: email}
 		if err := db.Create(&e).Error; err != nil {
 			return err
 		}

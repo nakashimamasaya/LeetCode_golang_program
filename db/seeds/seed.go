@@ -35,7 +35,7 @@ func main() {
 	db := openConnection()
 	defer db.Close()
 
-	db.AutoMigrate(models.Customers{}, models.Orders{}, models.Persons{})
+	db.AutoMigrate(models.Customers{}, models.Orders{}, models.Person{})
 	if err := Seed(db); err != nil {
 		fmt.Printf("%+v", err)
 		return
