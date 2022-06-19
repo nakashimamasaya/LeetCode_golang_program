@@ -19,15 +19,15 @@ func Seed(db *gorm.DB) error {
 		1,
 	}
 
-	for _, name := range names {
-		n := models.Customers{Name: name}
+	for i, name := range names {
+		n := models.Customers{Id: i + 1, Name: name}
 		if err := db.Create(&n).Error; err != nil {
 			return err
 		}
 	}
 
-	for _, cId := range customerIds {
-		o := models.Orders{CustomerId: cId}
+	for i, cId := range customerIds {
+		o := models.Orders{Id: i + 1, CustomerId: cId}
 		if err := db.Create(&o).Error; err != nil {
 			return err
 		}

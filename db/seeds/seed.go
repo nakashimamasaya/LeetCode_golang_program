@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 
+	_00182 "LeetCode/db/seeds/problem/00182"
 	_00183 "LeetCode/db/seeds/problem/00183"
 	models "LeetCode/models"
 
@@ -20,15 +21,21 @@ func openConnection() *gorm.DB {
 }
 
 func Seed(db *gorm.DB) error {
-	message := _00183.Seed(db)
-	return message
+	message := []error{
+		_00182.Seed(db),
+		_00183.Seed(db),
+	}
+	for _, m := range message {
+		return m
+	}
+	return nil
 }
 
 func main() {
 	db := openConnection()
 	defer db.Close()
 
-	db.AutoMigrate(models.Customers{}, models.Orders{})
+	db.AutoMigrate(models.Customers{}, models.Orders{}, models.Person{})
 	if err := Seed(db); err != nil {
 		fmt.Printf("%+v", err)
 		return
