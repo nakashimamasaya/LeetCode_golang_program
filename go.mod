@@ -1,6 +1,6 @@
 module LeetCode
 
-go 1.17
+go 1.19
 
 require gorm.io/driver/mysql v1.3.4
 
