@@ -6,7 +6,7 @@ package _00205
 func isIsomorphic(s string, t string) bool {
 	m, used := map[string]string{}, map[string]bool{}
 	for i := 0; i < len(s); i++ {
-		if m[string(s[i])] == "" && used[string(t[i])] == false {
+		if m[string(s[i])] == "" && !used[string(t[i])] {
 			m[string(s[i])] = string(t[i])
 			used[string(t[i])] = true
 		} else if m[string(s[i])] != string(t[i]) {
