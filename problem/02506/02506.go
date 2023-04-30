@@ -24,7 +24,7 @@ func similarPairs(words []string) int {
 
 func wordMap(s string) map[rune]int {
 	m := map[rune]int{}
-	for _, ss := range []rune(s) {
+	for _, ss := range s {
 		m[ss]++
 	}
 	return m
