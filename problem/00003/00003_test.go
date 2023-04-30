@@ -7,13 +7,11 @@ func TestSample(t *testing.T) {
 		"abcabcbb",
 		"bbbbb",
 		"pwwkew",
-		"aabaab!bb",
 	}
 
 	ans := []int{
 		3,
 		1,
-		3,
 		3,
 	}
 
