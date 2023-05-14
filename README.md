@@ -18,3 +18,6 @@ migrate & seed
 ```
 $ ./create_db.sh
 ```
+
+# user status
+[![kamo18sima's LeetCode Stats](https://leetcode-stats.vercel.app/api?username=kamo18sima&theme=Dark)](https://github.com/JeremyTsaii/leetcode-stats)
