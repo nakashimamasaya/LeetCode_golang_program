@@ -17,8 +17,8 @@ func gcdOfStrings(str1 string, str2 string) string {
 
 func checkZeroStrings(str []string) bool {
 	flag := true
-	for i := 0; i < len(str) && flag; i++ {
-		flag = len(str[i]) == 0
+	for _, s := range str {
+		flag = flag && len(s) == 0
 	}
 	return flag
 }
