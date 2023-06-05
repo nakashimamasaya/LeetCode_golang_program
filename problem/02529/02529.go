@@ -17,6 +17,5 @@ func maximumCount(nums []int) int {
 		}
 		ans++
 	}
-
 	return ans
 }
