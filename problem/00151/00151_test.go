@@ -15,10 +15,9 @@ func TestSample(t *testing.T) {
 		"example good a",
 	}
 
-	for i := 0; i < len(s); i++ {
-		result := reverseWords(s[i])
-		if result != ans[i] {
-			t.Errorf("miss sample %d\n return %v\n answer %v", i+1, result, ans[i])
+	for i, a := range ans {
+		if result := reverseWords(s[i]); result != a {
+			t.Errorf("miss sample %d\n return %v\n answer %v", i+1, result, a)
 		}
 	}
 }

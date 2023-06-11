@@ -5,15 +5,15 @@ import (
 )
 
 // 151. Reverse Words in a String
-// https://leetcode.com/problems/reverse-words-in-a-string/
+// https://leetcode.com/problems/reverse-words-in-a-string
 
 func reverseWords(s string) string {
-	return strings.Join(reverseSlice(strings.Fields(s)), " ")
-}
-
-func reverseSlice(s []string) []string {
-	for i := 0; i < len(s)/2; i++ {
-		s[i], s[len(s)-i-1] = s[len(s)-i-1], s[i]
+	tmp, ans := strings.Split(s, " "), ""
+	for i := len(tmp) - 1; i >= 0; i-- {
+		if tmp[i] == "" {
+			continue
+		}
+		ans += " " + tmp[i]
 	}
-	return s
+	return ans[1:]
 }
