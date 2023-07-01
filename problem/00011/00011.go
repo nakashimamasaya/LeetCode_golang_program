@@ -5,27 +5,16 @@ package _0011
 
 func maxArea(height []int) int {
 	ans := 0
-	for i, h := range height {
-		for j := len(height) - 1; j > i && ans < h*(j-i); j-- {
-			ans = maxInt(ans, minInt(height[j], h)*(j-i))
-			if height[j] >= h {
-				break
-			}
+
+	for i, j, tmp := 0, len(height)-1, len(height)-1; i < j; tmp = j - i {
+		if height[i] > height[j] {
+			tmp, j = height[j]*tmp, j-1
+		} else {
+			tmp, i = height[i]*tmp, i+1
+		}
+		if ans < tmp {
+			ans = tmp
 		}
 	}
 	return ans
-}
-
-func maxInt(a, b int) int {
-	if a >= b {
-		return a
-	}
-	return b
-}
-
-func minInt(a, b int) int {
-	if a <= b {
-		return a
-	}
-	return b
 }
