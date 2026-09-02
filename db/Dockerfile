@@ -1,4 +1,4 @@
-FROM golang:1.20.5
+FROM golang:1.27.1
 
 RUN mkdir /go/src/app
 
